@@ -60,3 +60,4 @@ typings/
 config.json
 cert.pem
 key.pem
+oauth.sqlite

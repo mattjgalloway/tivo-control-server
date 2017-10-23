@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+  head
+    title="TiVo Control Server"
+    link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+  body
+    .main.container
+      .row
+        .col-md-6.col-md-offset-3
+          h2 TiVo Control Server
+          if invalidUser
+            div.alert.alert-danger
+              p Invalid credentials!
+          form(method="POST", action="", role="form")
+            .form-group
+              input(type="hidden", name="allow", value="yes")
+              input(type="hidden", name="client_id", value=clientId)
+              input(type="hidden", name="redirect_uri", value=redirectUri)
+              input(type="hidden", name="response_type", value="code")
+            .form-group
+              input.form-control(id="username", name="username", type="text", placeholder="Username")
+            .form-group
+              input.form-control(id="password", name="password", type="password", placeholder="Password")
+            .form-group
+              button.btn.btn-primary(type="submit") Login
+
+    script(src="//code.jquery.com/jquery-1.12.4.min.js")
+    script(src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")

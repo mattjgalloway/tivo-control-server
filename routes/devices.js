@@ -21,7 +21,7 @@ devices.param('deviceId', function(req, res, next, value) {
   next();
 });
 
-devices.get('/devices', function(req, res) {
+devices.get('/device/list', function(req, res) {
   res.json(config.tivos);
 });
 

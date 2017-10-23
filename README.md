@@ -4,8 +4,12 @@ Expose an HTTP(S) server for your TiVo DVR(s).
 
 ## Setup
 
-1. Copy `example-config.json` to `config.json`.
-2. Open `config.json` and edit the `tivos` section to include the TiVo(s) that you would like to control.
+  1. Copy `example-config.json` to `config.json`.
+  2. Open `config.json`.
+  3. Edit the `tivos` section to include the TiVo(s) that you would like to control.
+  4. Run `node generate_oauth.js`.
+  5. Copy the client ID and client secret into `config.json`.
+  6. In `config.json`, set your desired username, password and redirect URIs.
 
 ### SSL
 

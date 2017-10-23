@@ -1,6 +1,14 @@
 {
   "port": 3000,
 
+  "oauth": {
+    "clientId": "GENERATE_ME",
+    "clientSecret": "GENERATE_ME",
+    "redirectUris": []
+    "username": "user",
+    "password": "12345"
+  },
+
   "tivos": [
     {
       "name": "My TiVo",
